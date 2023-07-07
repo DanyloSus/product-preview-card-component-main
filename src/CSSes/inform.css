@@ -2,6 +2,10 @@ section {
     width: 50%;
     height: 100%;
     padding: 8.33% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: space-between;
 }
 
 h3 {
@@ -15,13 +19,11 @@ h1 {
     font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
     font-size: 36px;
-    margin: 10% 0;
     line-height: 30px;
 }
 
 p {
     line-height: 22px;
-    margin-bottom: 5%;
 }
 
 p, h3, .price > h2 {
@@ -31,7 +33,7 @@ p, h3, .price > h2 {
 .price {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .price > h1 {
@@ -41,6 +43,7 @@ p, h3, .price > h2 {
 .price > h2 {
     text-decoration: line-through;
     font-size: 12px;
+    margin-left: 20px;
 }
 
 .price h1::before, .price h2::before {
@@ -53,7 +56,6 @@ button {
     border: 0px;
     color: hsl(0, 0%, 100%);
     padding: 7% 10%;
-    margin-top: 2.5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +71,16 @@ button:hover {
 
 button > img {
     width: auto;
+    height: auto;
     margin-right: 5px;
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 710px) {
+    section {
+        width: 100%;
+    }
+    button {
+        padding: 5% 10%;
+    }
 }

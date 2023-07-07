@@ -30,3 +30,24 @@ img {
   object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
+
+@media screen and (max-width: 1050px) {
+  main{
+    width: calc(100%/12*8);
+    height: calc(100%/12*9.5);
+  }
+}
+
+@media screen and (max-width: 710px) {
+  main{
+    width: calc(100%/12*11);
+    height: calc(100%/12*11);
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: calc(100%/12*4);
+    border-radius: 20px 20px 0 0;
+  }
+}
