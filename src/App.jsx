@@ -1,8 +1,19 @@
 import React from 'react';
+import Net from './Elements/Net';
+import Inform from './Elements/Inform';
 
 function App() {
   return(
-    <h1>Sus</h1>
+    <>
+      <Net need="n" />
+      <main>
+        <img 
+          src="image-product-desktop.jpg" 
+          alt="Product photo"
+        />
+        <Inform />
+      </main>
+    </>
   );
 }
 

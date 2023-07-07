@@ -1,0 +1,74 @@
+section {
+    width: 50%;
+    height: 100%;
+    padding: 8.33% 5%;
+}
+
+h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5.5px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 36px;
+    margin: 10% 0;
+    line-height: 30px;
+}
+
+p {
+    line-height: 22px;
+    margin-bottom: 5%;
+}
+
+p, h3, .price > h2 {
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price > h1 {
+    color: hsl(158, 36%, 37%);
+}
+
+.price > h2 {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.price h1::before, .price h2::before {
+    content: "$";
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    border: 0px;
+    color: hsl(0, 0%, 100%);
+    padding: 7% 10%;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(156, 59%, 25%);
+}
+
+button > img {
+    width: auto;
+    margin-right: 5px;
+    transform: rotateY(180deg);
+}
